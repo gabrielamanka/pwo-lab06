@@ -1,7 +1,20 @@
 package pwo.app;
- public class Sequence {
 
- public static void main(String[] args) {
+/**
+  * Punkt wejścia do aplikacji Sequence.
+ * Analizuje argumenty wiersza poleceń i wykonuje odpowiednią aplikację.
+ * @author gabriela
+ * @version  1.0.0
+ */
+public class Sequence {
+
+    /**
+     * Główna metoda, która sprawdza liczbę argumentów wiersza poleceń
+     * i uruchamia odpowiednią aplikację.
+     *
+     * @param args Argumenty wiersza poleceń.
+     */
+    public static void main(String[] args) {
 
  switch(args.length){
  case 3: (new SeqToOutApp()).run(args); break;
